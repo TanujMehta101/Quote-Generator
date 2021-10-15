@@ -2,13 +2,20 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    background-color:rgb(240, 141, 141);
 }
 
 body {
     font-family: helvetica;
     font-size: 18px;
   }
-  
+
+  .heading{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    font-size:large;
+  }
+
   .container {
     margin: 200px auto;
     width: 400px;
@@ -20,14 +27,19 @@ body {
     border: 2px solid #ddd;
     padding: 30px 20px;
     margin-bottom: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
+
   #quote {
     color: #444;
     text-align: center;
   }
+
   #author {
     float: right;
-    color: #888;
+    color: rgb(73, 70, 70);
     font-weight: bold;
     font-style: italic;
     margin-top: 10px;
@@ -36,16 +48,27 @@ body {
 
   #next-btn {
     align-self: center;
-    border: 2px solid #666;
-    padding: 10px 15px;
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
     text-transform: uppercase;
-    color: #666;
-    font-weight: bold;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.801);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.541);
+    transition: all 0.3s ease 0s;
     cursor: pointer;
-    border-radius: 10px;
+    outline: none;
   }
   
-  #next-btn:focus {
-    outline: none;
+  #next-btn:hover {
+    background-color: #f55966;
+    box-shadow: 0px 15px 20px rgba(229, 46, 101, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
   }
   
